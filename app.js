@@ -7,7 +7,7 @@ const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static("public"));
+app.use(express.static("Public"));
 
 io.on("connection", (socket) => {
   console.log("a user connected:", socket.id);
